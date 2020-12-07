@@ -54,6 +54,15 @@ body {
 
 .main-header {
 	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url('Images/band_members.jpg');
+	background-blend-mode: multiply;
+	background-size: cover;
+	padding-bottom: 30px;
+	height: 100vh;
+}
+
+.main-header2 {
+	background-color: rgba(0, 0, 0, 0.6);
 	background-image: url('Images/Header Background.jpg');
 	background-blend-mode: multiply;
 	background-size: cover;
