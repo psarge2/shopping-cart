@@ -69,6 +69,19 @@ body {
 	padding-bottom: 30px;
 }
 
+.main-header3 {
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url('Images/band_members.jpg');
+	background-blend-mode: multiply;
+	background-size: cover;
+	padding-bottom: 30px;
+	height: 100vh;
+}
+
+.about-p {
+	color: #ffffff;
+}
+
 .band-name {
 	text-align: center;
 	margin: 0;
@@ -108,7 +121,7 @@ body {
 }
 
 .main-footer {
-	background-color: #56ccf2;
+	background-color: #3a3a3a;
 	color: white;
 	padding: 0.25em 0;
 }
@@ -139,8 +152,14 @@ body {
 	cursor: pointer;
 }
 
+.btn-album {
+	display: block;
+	margin: 0 auto;
+}
+
 .btn-header {
-	margin: 0.5em 15% 2em 15%;
+	display: block;
+	margin: 2em 15% 2em 15%;
 	color: white;
 	border: 2px solid #2d9cdb;
 	background-color: rgba(255, 255, 255, 0.1);
