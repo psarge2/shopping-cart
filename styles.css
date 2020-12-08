@@ -58,7 +58,7 @@ body {
 	background-blend-mode: multiply;
 	background-size: cover;
 	padding-bottom: 30px;
-	height: 100vh;
+	height: 100%;
 }
 
 .main-header2 {
@@ -79,7 +79,7 @@ body {
 }
 
 .about-p {
-	color: #ffffff;
+	color: #ffffffe5;
 }
 
 .band-name {
@@ -154,7 +154,15 @@ body {
 
 .btn-album {
 	display: block;
-	margin: 0 auto;
+	margin: 5em auto;
+	color: white;
+	border: 2px solid #2d9cdb;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 0;
+	font-size: 1.5em;
+	font-weight: lighter;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 .btn-header {
