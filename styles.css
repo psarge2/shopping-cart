@@ -68,13 +68,13 @@ body {
 	padding-bottom: 30px;
 }
 
-.main-header3 {
+.hero-section {
 	background-color: rgba(0, 0, 0, 0.6);
 	background-image: url('Images/band_members.jpg');
 	background-blend-mode: multiply;
 	background-size: cover;
 	padding-bottom: 30px;
-	height: 100vh;
+	height: 100%;
 }
 
 .main-header-container {
