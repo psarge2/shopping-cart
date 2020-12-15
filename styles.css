@@ -56,6 +56,7 @@ body {
 	background-image: url('Images/band_members.jpg');
 	background-blend-mode: multiply;
 	background-size: cover;
+	background-attachment: fixed;
 	padding-bottom: 30px;
 	height: 100%;
 }
@@ -73,6 +74,8 @@ body {
 	background-image: url('Images/band_members.jpg');
 	background-blend-mode: multiply;
 	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 30px;
 	padding-bottom: 30px;
 	height: 100%;
 }
@@ -89,6 +92,8 @@ body {
 
 .about-p {
 	color: #ffffffe5;
+	font-size: 1.2em;
+	line-height: 1.5em;
 }
 
 .band-name {
