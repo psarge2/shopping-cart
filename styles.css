@@ -63,10 +63,13 @@ body {
 
 .main-header2 {
 	background-color: rgba(0, 0, 0, 0.6);
-	background-image: url('Images/Header Background.jpg');
+	background-image: url('Images/band_members2.jpg');
 	background-blend-mode: multiply;
 	background-size: cover;
+	/* height: 500px; */
+	background-position: center;
 	padding-bottom: 30px;
+	height: 50vh;
 }
 
 .hero-section {
