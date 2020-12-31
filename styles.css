@@ -367,7 +367,7 @@ body {
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.5em;
-	color: #333;
+	color: var(--mainBlack);
 	margin-bottom: 15px;
 }
 
@@ -383,7 +383,7 @@ body {
 
 .shop-item-price {
 	flex-grow: 1;
-	color: #333;
+	color: var(--mainBlack);
 }
 
 .shop-items {
@@ -396,7 +396,7 @@ body {
 .cart-header {
 	font-weight: bold;
 	font-size: 1.25em;
-	color: #333;
+	color: var(--mainBlack);
 }
 
 .cart-column {
@@ -419,7 +419,7 @@ body {
 .cart-price {
 	width: 20%;
 	font-size: 1.2em;
-	color: #333;
+	color: var(--mainBlack);
 }
 
 .cart-quantity {
@@ -456,7 +456,7 @@ body {
 	border-radius: 5px;
 	border: 1px solid #56ccf2;
 	background-color: #eee;
-	color: #333;
+	color: var(--mainBlack);
 	padding: 0;
 	text-align: center;
 	font-size: 1.2em;
@@ -480,12 +480,12 @@ body {
 .cart-total-title {
 	font-weight: bold;
 	font-size: 1.5em;
-	color: black;
+	color: var(--mainBlack);
 	margin-right: 20px;
 }
 
 .cart-total-price {
-	color: #333;
+	color: var(--mainBlack);
 	font-size: 1.1em;
 }
 
