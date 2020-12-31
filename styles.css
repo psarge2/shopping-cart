@@ -243,7 +243,7 @@ body {
 .container {
 	max-width: 900px;
 	margin: 0 auto;
-	padding: 0 1.5rem;
+	/* padding: 0 1.5rem; */
 }
 .section-header {
 	font-family: 'Metal Mania';
@@ -362,6 +362,18 @@ body {
 
 /* --------------- End Tour Section  ---------------- */
 /* --------------- Shop Section ---------------- */
+.products {
+	padding: 1.5rem;
+}
+#store {
+	background-color: #f7f7f7;
+	background-size: cover;
+}
+
+#cart {
+	background-color: #f7f7f7;
+	background-size: cover;
+}
 
 .shop-item {
 	margin: 30px;
@@ -497,7 +509,7 @@ body {
 
 .btn-purchase {
 	display: block;
-	margin: 40px auto 80px auto;
+	margin: 0 auto;
 	font-size: 1.75em;
 }
 /* --------------- End Cart  ---------------- */
