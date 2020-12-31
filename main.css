@@ -96,7 +96,7 @@ body {
 .banner-title {
 	font-size: 3.4rem;
 	color: var(--mainWhite);
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: var(--mainSpacing);
 	margin-bottom: 3rem;
 }
@@ -165,3 +165,27 @@ body {
 	color: var(--primaryColor);
 }
 /* --------------- End of Store Hero ---------------- */
+
+.content-section {
+	margin: 1rem;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+.section-header {
+	font-family: 'Metal Mania';
+	font-weight: normal;
+	color: var(--mainWhite);
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.about-p {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	text-align: left;
+}
