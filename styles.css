@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 @import url('https://fonts.googleapis.com/css?family=Metal+Mania');
 
 @font-face {
@@ -9,17 +9,47 @@
 	font-style: normal;
 }
 
-* {
-	box-sizing: border-box;
-	font-family: Raleway;
-	color: #777;
+:root {
+	--primaryColor: #f09d51;
+	--mainWhite: #fff;
+	--mainBlack: #333;
+	--mainGrey: #ececec;
+	--mainSpacing: 0.1rem;
+	--mainTransition: all 0.3s linear;
 }
-
-html,
-body {
+* {
 	margin: 0;
 	padding: 0;
-	min-height: 100%;
+	box-sizing: border-box;
+}
+body {
+	color: var(--mainBlack);
+	background: var(--mainWhite);
+	font-family: 'Lato', sans-serif;
+}
+
+/* --------------- Navbar ---------------- */
+
+.nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: var(--mainBlack);
+	z-index: 1;
+}
+
+.main-nav {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	font-size: 1.1rem;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1.5rem;
 }
 
 .nav ul {
@@ -33,55 +63,143 @@ body {
 .nav a {
 	display: inline-block;
 	padding: 0.5em;
-	color: white;
+	color: var(--mainWhite);
 	text-decoration: none;
 }
 
-.main-nav {
-	font-size: 1.1em;
-	font-weight: lighter;
-	/*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+.nav-logo {
+	text-align: center;
+	margin: 0;
+	font-size: 2.5rem;
+	font-family: 'Metal Mania';
+	font-weight: normal;
+	color: var(--mainWhite);
 }
+/* --------------- End of Navbar ---------------- */
 
-.main-nav li {
-	padding: 0 5%;
-}
-
-.nav a:hover {
-	background-color: rgba(255, 255, 255, 0.3);
-}
-
-.main-header {
+/* --------------- Hero ---------------- */
+.hero {
+	min-height: calc(100vh - 60px);
 	background-color: rgba(0, 0, 0, 0.6);
 	background-image: url('Images/band_members.jpg');
 	background-blend-mode: multiply;
 	background-size: cover;
 	background-attachment: fixed;
-	padding-bottom: 30px;
-	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner {
+	text-align: center;
+	display: inline-block;
+	padding: 2rem;
+}
+.banner-title {
+	font-size: 3.4rem;
+	color: var(--mainWhite);
+	text-transform: capitalize;
+	letter-spacing: var(--mainSpacing);
+	margin-bottom: 3rem;
 }
 
-.main-header2 {
+.banner-logo {
+	font-size: 5.5rem;
+	font-family: 'Metal Mania';
+	color: var(--mainWhite);
+	text-transform: uppercase;
+	letter-spacing: var(--mainSpacing);
+	margin-bottom: 3rem;
+}
+.banner-btn {
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	letter-spacing: var(--mainSpacing);
+	font-size: 1rem;
+	background: var(--primaryColor);
+	color: var(--mainBlack);
+	border: 1px solid var(--primaryColor);
+	transition: var(--mainTransition);
+	cursor: pointer;
+}
+.banner-btn:hover {
+	background: transparent;
+	color: var(--primaryColor);
+}
+/* --------------- End of Hero ---------------- */
+/* --------------- Store Hero ---------------- */
+.hero-store {
+	min-height: calc(100vh - 60px);
 	background-color: rgba(0, 0, 0, 0.6);
 	background-image: url('Images/band_members2.jpg');
 	background-blend-mode: multiply;
 	background-size: cover;
-	/* height: 500px; */
-	background-position: center;
-	padding-bottom: 30px;
-	height: 50vh;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner-store {
+	text-align: center;
+	background: rgba(255, 255, 255, 0.8);
+	display: inline-block;
+	padding: 2rem;
+}
+.banner-title-store {
+	font-size: 3.4rem;
+	text-transform: uppercase;
+	letter-spacing: var(--mainSpacing);
+	margin-bottom: 3rem;
+}
+.banner-btn {
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	letter-spacing: var(--mainSpacing);
+	font-size: 1rem;
+	background: var(--primaryColor);
+	color: var(--mainBlack);
+	border: 1px solid var(--primaryColor);
+	transition: var(--mainTransition);
+	cursor: pointer;
+}
+.banner-btn:hover {
+	background: transparent;
+	color: var(--primaryColor);
+}
+/* --------------- End of Store Hero ---------------- */
+/* --------------- Section Hero ---------------- */
+.content-section {
+	margin: 2rem;
 }
 
-.hero-section {
-	background-color: rgba(0, 0, 0, 0.6);
-	background-image: url('Images/band_members.jpg');
-	background-blend-mode: multiply;
-	background-size: cover;
-	background-attachment: fixed;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	height: 100%;
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1.5rem;
 }
+
+.hero-logo {
+	font-size: 4.5rem;
+	font-family: 'Metal Mania';
+	color: var(--mainWhite);
+	text-transform: uppercase;
+	letter-spacing: var(--mainSpacing);
+	margin-bottom: 3rem;
+}
+.section-header {
+	font-family: 'Metal Mania';
+	font-weight: normal;
+	color: var(--mainWhite);
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.about-p {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	text-align: left;
+}
+/* --------------- End of Section Hero ---------------- */
 
 .main-header-container {
 	display: flex;
@@ -108,25 +226,26 @@ body {
 	color: white;
 }
 
-.band-name-large {
+/* .band-name-large {
 	font-size: 8em;
-}
+} */
 
 .content-section {
-	margin: 1em;
+	margin: 1rem;
 }
 
 .container {
 	max-width: 900px;
 	margin: 0 auto;
-	padding: 0 1.5em;
+	padding: 0 1.5rem;
 }
 .section-header {
 	font-family: 'Metal Mania';
 	font-weight: normal;
 	color: #333;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 2.5rem;
+	margin: 1rem 1rem;
 }
 
 .about-band-image {
@@ -135,31 +254,6 @@ body {
 	width: 350px;
 	margin: 15px;
 	border-radius: 35%;
-}
-
-.main-footer {
-	background-color: #3a3a3a;
-	color: white;
-	padding: 0.25em 0;
-}
-
-.main-footer-container {
-	display: flex;
-	align-items: center;
-}
-
-.main-footer-container ul {
-	flex-grow: 1;
-	text-align: end;
-}
-
-.footer-nav li {
-	padding: 0 0.5em;
-}
-
-.footer-nav img {
-	width: 30px;
-	height: 30px;
 }
 
 .btn {
@@ -213,16 +307,20 @@ body {
 
 .btn-primary {
 	color: white;
-	background-color: #56ccf2;
+	background-color: var(--primaryColor);
 	border: none;
 	border-radius: 0.3em;
 	font-weight: bold;
 }
 
 .btn-primary:hover {
-	background-color: #2d9cdb;
+	background: transparent;
+	color: var(--primaryColor);
+	border: solid 1px;
+	border-radius: 0.3em;
 }
 
+/* --------------- Tour Section ---------------- */
 .tour-row {
 	border-bottom: 1px solid black;
 	padding-bottom: 1em;
@@ -255,6 +353,9 @@ body {
 .tour-btn {
 	max-width: 19%;
 }
+
+/* --------------- End Tour Section  ---------------- */
+/* --------------- Shop Section ---------------- */
 
 .shop-item {
 	margin: 30px;
@@ -290,7 +391,8 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-
+/* --------------- End Shop  Section ---------------- */
+/* --------------- Cart ---------------- */
 .cart-header {
 	font-weight: bold;
 	font-size: 1.25em;
@@ -392,3 +494,32 @@ body {
 	margin: 40px auto 80px auto;
 	font-size: 1.75em;
 }
+/* --------------- End Cart  ---------------- */
+/* --------------- Footer ---------------- */
+
+.main-footer {
+	background-color: #3a3a3a;
+	color: white;
+	padding: 0.25em 0;
+}
+
+.main-footer-container {
+	display: flex;
+	align-items: center;
+}
+
+.main-footer-container ul {
+	flex-grow: 1;
+	text-align: end;
+}
+
+.footer-nav li {
+	padding: 0 0.5em;
+}
+
+.footer-nav img {
+	width: 30px;
+	height: 30px;
+}
+
+/* --------------- End Footer  ---------------- */
