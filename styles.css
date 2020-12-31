@@ -75,6 +75,12 @@ body {
 	font-weight: normal;
 	color: var(--mainWhite);
 }
+
+.top-nav li {
+	padding: 0 0.5em;
+	display: inline;
+}
+
 /* --------------- End of Navbar ---------------- */
 
 /* --------------- Hero ---------------- */
@@ -499,7 +505,7 @@ body {
 
 .main-footer {
 	background-color: #3a3a3a;
-	color: white;
+	color: var(--mainBlack);
 	padding: 0.25em 0;
 }
 
@@ -515,6 +521,7 @@ body {
 
 .footer-nav li {
 	padding: 0 0.5em;
+	display: inline;
 }
 
 .footer-nav img {
